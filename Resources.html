@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>建国70周年</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/text.css">
+</head>
+<body>
+<header id="header">
+    <div class="utility-bar" style="background:linear-gradient(90deg, rgba(255, 0, 0, 1), rgba(250, 240, 8, 1));">
+        <div class="hours">Open Daily from 8:00am to Midnight</div>
+        <a href="#" class="main-logo" style="rgb(140, 38, 51)">
+            <img src="images/logo.png" alt="">
+        </a>
+        <nav id="utility-navigation">
+            <ul>
+                <li><a href="#" style="color: #fff;">ABOUT US</a></li>
+                <li><a href="#" style="color: #fff;">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <nav id="primary-navigation" style="background:linear-gradient(90deg, rgba(255, 0, 0, 1), rgba(250, 240, 8, 1));">
+        <ul>
+            <li>
+                <div class="main-link">
+                    <a href="index.html">首页</a>
+                </div>
+            </li>
+            <li>
+                <div class="main-link">
+                    <a href="course.html">建国伟业</a>
+                </div>
+            </li>
+            <li>
+                <div class="main-link">
+                    <a href="policy.html">伟大政策</a>
+                </div>
+            </li>
+            <li class="has-submenu">
+                <div class="main-link">
+                    <a href="achievement.html">卓越成就</a>
+                    <span class="dropdown"></span>
+                    <ul class="sub-nav">
+                        <li><a href="#">经济成就</a></li>
+                        <li><a href="#">科技成就</a></li>
+                        <li><a href="#">军事成就</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="main-link">
+                    <a href="Resources.html">红色经典</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main id="content" class="content">
+    <div class="content_left">
+        <div class="move-title">
+            <span>经典作品欣赏</span>
+        </div>
+        <div class="move">
+            <div id="move-one">
+                <div class="box" :style="{width:size.x+'px',height:size.z+'px'}">
+                    <div :style="styleTop"><a target="_blank" href="https://www.iqiyi.com/v_19rrbqar6g.html?vfm=2008_aldbd"></a></div>
+                    <div :style="styleBottom"><a target="_blank" href="https://v.qq.com/x/cover/p7r69872jb8hg3u.html"></a></div>
+                    <div :style="styleLeft"><a target="_blank" href="https://www.iqiyi.com/v_19rr8zy6mc.html"></a></div>
+                    <div :style="styleRight"><a target="_blank" href="http://tv.cctv.com/2017/09/21/VIDEAcyO24K2rcQB2J6CI0PX170921.shtml"></a></div>
+                    <div :style="stylePre"><a target="_blank" href="https://www.iqiyi.com/v_19rrk3nlz4.html?vfm=2008_aldbd&fc=828fb30b722f3164&fv=p_02_01"></a></div>
+                    <div :style="styleBack"><a target="_blank" href="https://www.iqiyi.com/v_19rrj5vg78.html"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content_right">
+        <div class="book">
+            <div class="bookone"><a target="_blank" href="http://www.shushu8.com/b_m1r.htm"><img src="images/book-1.jpg" alt=""></a></div>
+            <div class="bookone"><a target="_blank" href="http://www.shushu8.com/b_m1u.htm"><img src="images/book-2.jpg" alt=""></a></div>
+            <div class="bookone"><a target="_blank" href="http://www.shushu8.com/b_ab9.htm"><img src="images/book-3.jpg" alt=""></a></div>
+            <div class="bookone"><a target="_blank" href="http://www.thxf.gov.cn/e/action/ShowInfo.php?classid=2162&id=16136"><img src="images/book-4.jpg" alt=""></a></div>
+            <div class="bookone"><a target="_blank" href="http://ishare.iask.sina.com.cn/f/68420514.html"><img src="images/book-5.jpg" alt=""></a></div>
+            <div class="bookone"><a target="_blank" href="https://wenku.baidu.com/view/d461d24c03020740be1e650e52ea551810a6c9c0.html"><img src="images/book-6.jpg" alt=""></a></div>
+            <div class="bookone"><a target="_blank" href="https://b.faloo.com/html/437/437731/"><img src="images/book-7.jpg" alt=""></a></div>
+            <div class="bookone"><a target="_blank" href="https://www.kanunu8.com/book4/8700/"><img src="images/book-8.jpg" alt=""></a></div>
+            <div class="bookone"><a target="_blank" href="http://book.ifeng.com/gundong/detail_2013_04/14/24192144_0.shtml"><img src="images/book-9.jpg" alt=""></a></div>
+        </div>
+    </div>
+
+</main>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/vue.min.js"></script>
+<script type="text/javascript">
+    let x = '450', y = '450', z = '450';
+    let one = new Vue({
+        el:'#move-one',
+        data:{
+            size:{
+                x:x,
+                y:y,
+                z:z
+            },
+            styleLeft:{
+                backgroundImage: `url(images/1.jpg)`,
+                transform: '',
+                width:'',
+                height:''
+            },
+            styleRight:{
+                backgroundImage: `url(images/2.jpg)`,
+                transform: ``,
+                width:'',
+                height:''
+            },
+            styleTop:{
+                backgroundImage: `url(images/3.jpg)`,
+                transform: ``,
+                width:'',
+                height:''
+            },
+            styleBottom:{
+                backgroundImage: `url(images/4.jpg)`,
+                transform: ``,
+                width:'',
+                height:''
+
+            },
+            stylePre:{
+                backgroundImage: `url(images/5.jpg)`,
+                transform: ``,
+                width:'',
+                height:''
+            },
+            styleBack:{
+                backgroundImage: `url(images/6.jpg)`,
+                transform: ``,
+                width:'',
+                height:''
+
+            }
+
+        },
+        computed:{
+            preZ(){
+                return Math.floor(this.size.y/2) + 'px'
+            },
+            backZ(){
+                return Math.floor(this.size.y/2) + 'px'
+            },
+            leftZ(){
+                return Math.floor(this.size.y/2) + 'px'
+            },
+            rightZ(){
+                return Math.floor(this.size.x - this.size.y/2) + 'px'
+            },
+            topZ(){
+                return Math.floor(this.size.y/2) + 'px'
+            },
+            bottomZ(){
+                return Math.floor(this.size.z - this.size.y/2) + 'px'
+            }
+        },
+        created(){
+            this.creat()
+        },
+        // watch:{
+        //     size:{
+        //         handler(){
+        //             this.creat()
+        //         },
+        //         deep:true
+        //     }
+        // },
+        methods:{
+            creat(){
+                this.styleLeft.width = this.styleRight.width = this.size.y + 'px';
+                this.styleLeft.height = this.styleRight.height = this.size.z + 'px';
+                this.styleTop.width = this.styleBottom.width = this.size.x + 'px';
+                this.styleTop.height = this.styleBottom.height = this.size.y + 'px';
+                this.stylePre.width = this.styleBack.width = this.size.x + 'px';
+                this.stylePre.height = this.styleBack.height = this.size.z + 'px';
+
+                this.styleLeft.transform = `rotateY(-90deg) translateZ(${this.leftZ})`;
+                this.styleRight.transform = `rotateY(90deg) translateZ(${this.rightZ})`;
+                this.styleTop.transform = `rotateX(90deg) translateZ(${this.topZ})`;
+                this.styleBottom.transform = `rotateX(-90deg) translateZ(${this.bottomZ})`;
+                this.stylePre.transform = `translateZ(${this.preZ})`;
+                this.styleBack.transform = `rotateY(180deg) translateZ(${this.backZ})`;
+            }
+        }
+    });
+</script>
+<script src="js/jquery-touchrotate.js"></script>
+<script type="text/javascript">
+    $('.box').touchrotate({
+        //初始3D旋转
+        rotateX: -15,
+        rotateY: 15,
+        //数值越小 , 旋转速度越快
+        speedX: 2,
+        speedY: 2,
+        // 旋转的倍数, 越大旋转的圈数越多
+        multipleX: 50,
+        multipleY: 50,
+        // 动画持续的时间, 单位是S
+        time: 2,
+        //模式 0:表示匀速运动 , 运动中途可以重新开始 , 1表示先加速后减速(动画过程中不可滑动,体验效果差)
+        model: 0
+    });
+</script>
+</body>
+</html>

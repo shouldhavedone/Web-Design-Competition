@@ -1,0 +1,103 @@
+.content {
+    height: 1008px;
+    width: 100%;
+    padding: 20px;
+    background:linear-gradient(90deg, rgba(255, 0, 0, 1), rgba(250, 240, 8, 1));
+    overflow: hidden;
+}
+.content_left {
+    margin-top: 120px;
+    height: 100%;
+    width: 50%;
+    float: left;
+    margin-left: 50px;
+}
+.move-title {
+    margin-top: 100px;
+    position: relative;
+    width: 480px;
+    font-size: 80px;
+    font-family: "字魂55号-龙吟手书";
+    left: calc(50% - 240px);
+    color: #000;
+}
+.box {
+    height: 400px;
+    width: 400px;
+    margin: 130px auto;
+    position: relative;
+    transform: rotateX(0deg) rotateY(0deg);
+    transform-style: preserve-3d;
+    cursor: move;
+}
+
+.box div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+}
+.box div a {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+.content_right {
+    height: 890px;
+    width: 40%;
+    margin-top: 120px;
+    overflow: hidden;
+    background: url("../images/shujia.jpg") no-repeat;
+    background-size: 100% 100%;
+    float: right;
+    margin-right: 50px;
+    position: relative;
+}
+.book>div {
+    position: absolute;
+    width: 130px;
+
+}
+.book>div:first-child {
+    margin-top: 110px;
+    margin-left: 100px;
+}
+.book>div:nth-child(2){
+    margin-top: 110px;
+    margin-left: 300px;
+}
+.book>div:nth-child(3){
+    margin-top: 110px;
+    margin-left: 500px;
+}
+.book>div:nth-child(4){
+    margin-top: 400px;
+    margin-left: 100px;
+}
+.book>div:nth-child(5){
+    margin-top: 400px;
+    margin-left: 300px;
+}
+.book>div:nth-child(6){
+    margin-top: 400px;
+    margin-left: 500px;
+}
+.book>div:nth-child(7){
+    margin-top: 680px;
+    margin-left: 100px;
+}
+.book>div:nth-child(8){
+    margin-top: 680px;
+    margin-left: 300px;
+}
+.book>div:nth-child(9){
+    margin-top: 680px;
+    margin-left: 500px;
+}
+.bookone img {
+    width: 130px;
+    height: 182px;
+    box-shadow: 10px 0 10px #000000;
+
+}

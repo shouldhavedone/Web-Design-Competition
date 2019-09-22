@@ -1,0 +1,28 @@
+#person {
+    height: 1008px;
+    width: 100%;
+    background: url("../images/bg1.jpg");
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+#wrap{
+    width: 200px;
+    height:  300px;
+    margin: 250px auto;
+    position:relative;
+    transform-style:preserve-3d;
+    transform:perspective(900px) rotateX(-10deg) rotateY(0deg);
+}
+#wrap img{
+    width: 150px;
+    height: 200px;
+    position:absolute;
+    top:0;
+    left:0;
+    box-shadow: 0 0 10px #FFFFFF;
+    border-radius:10px;
+}
+
+
+
